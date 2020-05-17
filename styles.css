@@ -1,0 +1,276 @@
+/************ Header Styling and Position ************/
+h1{
+  color:#000;
+  background-color: #DDE2E5;
+  border-top: 18px solid #0065BF;
+  font-size: 38px;
+  text-align: center;
+  padding: 12px;
+  margin:0px;
+}
+h2{
+  margin: 0px 5px 5px;
+  text-align: center;
+  text-decoration: underline;
+}
+header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+footer{
+  background-color: #000;
+  text-align: center;
+  font-weight: lighter;
+  color: #FFF;
+  position: relative;
+  margin: 20px auto 0px;
+  border-top: solid 1px #000;
+  padding: 5px 1px 2px;
+  clear: both;
+}
+
+/************ Body Styling and Position ************/
+body{
+  background-image: linear-gradient(180deg, #678532 5%,#777 80%);
+  margin: 0px;
+}
+.body-wrapper{
+  margin-top: 145px;
+  min-height: 150vh;
+}
+.body-wrapper-gallery{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: max-content;
+  grid-auto-flow: row;
+  grid-column-gap: 1%;
+  grid-row-gap: 2%;
+}
+.three-column-float{
+  min-height: inherit;
+  float: left;
+  width: calc(33.333% - 28px);
+  background-image: linear-gradient(180deg, #403820 15%,#777 90%);
+}
+.body-wrapper section.three-column-float{
+  padding: 9px;
+  margin: 5px;
+}
+
+/*************** Nav Button Styling ***************/
+a.button{
+  display: block;
+  padding: 17px 0px 13px;
+}
+nav ul {
+  display: flex;
+}
+nav div{
+  width: 20%;
+}
+
+/************** Nav Borders and List Style **************/
+nav{
+  background-color:#0065BF;
+  font-size: 19px;
+  font-family: sans-serif;
+  text-align: center;
+  border-bottom: 6px groove #303030;
+}
+nav ul div:nth-child(2),
+nav ul div:nth-child(3),
+nav ul div:nth-child(4){
+  list-style: none;
+  border-left: solid 1px #000;
+  border-right: solid 1px #000;
+}
+nav ul div:first-child{
+  list-style: none;
+  border-right: solid 1px #000;
+}
+nav ul div:last-child{
+  list-style: none;
+  border-left: solid 1px #000;
+}
+
+/**************** Nav Pseudo Elements ****************/
+div.index:hover,
+div.highlights:hover,
+div.hikes:hover,
+div.gallery:hover,
+div.suggestions:hover{
+  background-color:#000;
+}
+nav a.button:link{
+  color:#e8e8e8;
+  text-decoration:none;
+}
+nav a.button:hover,
+nav a.button:active,
+nav a.button:visited{
+  color:#e8e8e8;
+}
+
+/************** Image Styles and Attributes **************/
+figure{
+  margin: auto;
+}
+figcaption{
+  line-height: 36px;
+  font-size: 22px;
+  font-family: "Times New Roman", sans-serif;
+}
+main figure img.hero{
+  display: flex;
+  width: calc(100vw - 10px);
+  margin-left:auto;
+  margin-right:auto;
+}
+.gallery figcaption{
+  margin-top: 2px;
+  margin-bottom: auto;
+}
+
+/************** Gallery Class Attributes **************/
+section.gallery:nth-child(2n){
+  grid-column: 2;
+}
+.gallery ul{
+  margin: 1px auto 5px;
+  padding-left: 8px;
+}
+
+/************** Table Attributes **************/
+th,td,tr{
+  padding: 8px;
+  border: 2px solid #000
+}
+table{
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  font-family: arial, times, sans-serif;
+}
+tbody{
+  margin: 20px auto;
+}
+th{
+  font-size: 30px;
+  background-color: #666;
+}
+td{
+  font-size: 20px;
+  letter-spacing: 1.4px;
+  font-family: 'Dosis', impact, serif;
+  background-color: white;
+}
+.subhead td{
+  font-weight: bold;
+  text-decoration: 2px underline;
+  background-color: #AAA;
+}
+td:first-child{
+  font-weight: bold;
+  text-decoration: 2px underline;
+  background-color: #AAA;
+}
+td a:active,
+td a:visited,
+td a:link{
+  color: #000;
+}
+td a:hover{
+  color: #A6A6A6;
+}
+
+/************** Form Styles and Attributes **************/
+form{
+  border: 2px solid #000;
+  width: 450px;
+  margin: 20px auto 0px;
+  background: gray;
+}
+input,label{
+  height: 20px;
+  margin: 1px;
+  width: 60%;
+}
+label{
+  font-weight: bold;
+  font-size: 18px;
+}
+input{
+  margin-bottom: 12px;
+}
+textarea{
+  min-width: 80%;
+  min-height: 15vh;
+}
+.season,
+.attractions{
+  text-decoration: underline;
+  font-size: 19px;
+}
+#continent{
+  margin-bottom: 12px;
+}
+#winter,
+#summer,
+#fall,
+#spring,
+#outdoors,
+#indoors,
+#bars,
+#hiking{
+  width: auto;
+}
+.summer,
+.winter,
+.fall,
+.spring,
+.outdoors,
+.indoors,
+.hiking,
+.bars{
+  font-family: arial;
+  font-weight: normal;
+}
+.comments{
+  margin-top: 5px;
+}
+ul.form{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding-left: 14px;
+}
+.submit{
+  margin: 10px 0px 0px;
+  display: block;
+  border-radius: 10px;
+}
+
+/************** Extra Styles and Attributes **************/
+div.b{
+  font-style: italic;
+  padding: 10px;
+  margin: 0px 6px 0px 6px;
+}
+footer p{
+  line-height: 15px;
+  margin: 4px;
+}
+.clear p{
+  text-align: center;
+}
+
+li.list1{
+  font-weight: bold;
+}
+li.list2{
+  color:white;
+}
+li.list3{
+  font-style: italic;
+}
